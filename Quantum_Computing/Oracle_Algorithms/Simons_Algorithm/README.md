@@ -55,3 +55,10 @@ Let's assume the secret string $`s = 110`$ (a 3-bit string), and define the func
    x_1 \oplus x_2 = 000 \oplus 001 = 001
   `$
    This does not match the secret string $`s = 110`$. Let's try another pair.
+
+###  Second Pair: $`x_1 = 010`$ and $`x_2 = 011`$
+
+  $`
+   x_1 \oplus x_2 = 010 \oplus 011 = 001
+  `$
+   This still does not match $`s = 110`$. Try again.
