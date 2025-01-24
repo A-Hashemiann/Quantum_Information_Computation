@@ -69,3 +69,12 @@ Let's assume the secret string $`s = 110`$ (a 3-bit string), and define the func
    x_1 \oplus x_2 = 000 \oplus 110 = 110
    `$
    Now, $`x_1 \oplus x_2 = s`$, so this is a valid pair.
+
+
+For $`x_1 = 000`$ and $`x_2 = 110`$, we have:
+
+1. $`x_1 \oplus x_2 = 110`$, which matches the secret string $`s`$.
+2. $`f(x_1) = f(x_2) = 011`$, so the outputs are the same.
+
+This satisfies the conditions in Simon's problem:
+- If $`x_1 \oplus x_2 = s`$, then $`f(x_1) = f(x_2)`$.
