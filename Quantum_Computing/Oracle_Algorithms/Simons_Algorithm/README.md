@@ -13,5 +13,3 @@ The black-box function $`f : \{0, 1\}^n \to \{0, 1\}^n`$ has the the following p
 2. **Goal:**
    - Determine the secret string $`s`$ with the fewest possible evaluations of $`f`$.
 
-- If $`s = 0`$, then $`f`$ is a one-to-one function.
-- If $`s \neq 0`$, then $`f`$ is a two-to-one function, meaning each output of $`f`$ is produced by exactly two different inputs.
