@@ -50,8 +50,8 @@ Let's assume the secret string $`s = 110`$ (a 3-bit string), and define the func
 
 ### First Pair: $`x_1 = 000`$ and $`x_2 = 001`$
 
-1. Compute $`x_1 \oplus x_2`$:
-   \[
+1. $`x_1 \oplus x_2`$:
+   $`
    x_1 \oplus x_2 = 000 \oplus 001 = 001
-   \]
+  `$
    This does not match the secret string $`s = 110`$. Let's try another pair.
