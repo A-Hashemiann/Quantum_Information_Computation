@@ -50,7 +50,7 @@ Let's assume the secret string $`s = 110`$ (a 3-bit string), and define the func
 
 ### First Pair: $`x_1 = 000`$ and $`x_2 = 001`$
 
-1. 
+
    $`
    x_1 \oplus x_2 = 000 \oplus 001 = 001
   `$
@@ -62,3 +62,10 @@ Let's assume the secret string $`s = 110`$ (a 3-bit string), and define the func
    x_1 \oplus x_2 = 010 \oplus 011 = 001
   `$
    This still does not match $`s = 110`$. Try again.
+
+### Third Pair: $`x_1 = 000`$ and $`x_2 = 110`$
+
+   $`
+   x_1 \oplus x_2 = 000 \oplus 110 = 110
+   `$
+   Now, $`x_1 \oplus x_2 = s`$, so this is a valid pair.
