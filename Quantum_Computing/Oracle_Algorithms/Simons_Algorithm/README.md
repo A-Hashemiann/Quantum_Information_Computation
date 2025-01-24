@@ -7,7 +7,7 @@ Simon’s problem is a computational challenge introduced by Daniel Simon in 199
 The black-box function $`f : \{0, 1\}^n \to \{0, 1\}^n`$ has the the following properties:
 
 1. **Two-to-One Property:**
-   - $`f(x1) = f(x2)`$ if and only if $`x1 \oplus x2 = s`$, where $`\oplus`$ denotes the bitwise XOR operation.
+   - $`f(x_1) = f(x_2)`$ if and only if $`x_1 \oplus x_2 = s`$, where $`\oplus`$ denotes the bitwise XOR operation.
    - The string $`s \in \{0, 1\}^n`$ is called the **secret string**.
 
 2. **Goal:**
@@ -25,3 +25,8 @@ The core of Simon's problem is based on finding the secret string $`s`$, where f
 For this to be possible, the function must be **2-to-1**. This means that there must be pairs of distinct inputs that produce the same output. These pairs are related by the secret string $`s`$, and you can find the secret string by identifying which inputs produce the same output.
 
 ---
+## Why the Function Cannot Be 1-to-1 in Simon's Problem
+
+If the function were **1-to-1** (injective), there would be no pairs of distinct inputs $`x_1`$ and $`x_2`$ that produce the same output. This would violate the condition $`f(x_1) = f(x_2)`$ for distinct $`x_1`$ and $`x_2`$.
+
+Since Simon's problem relies on finding pairs of inputs that map to the same output (and whose XOR equals the secret string $`s`$), a **2-to-1 function** is essential for solving the problem. The algorithm exploits this 2-to-1 nature to deduce the secret string efficiently.
