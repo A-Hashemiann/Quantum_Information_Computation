@@ -30,3 +30,18 @@ For this to be possible, the function must be **2-to-1**. This means that there 
 If the function were **1-to-1** (injective), there would be no pairs of distinct inputs $`x_1`$ and $`x_2`$ that produce the same output. This would violate the condition $`f(x_1) = f(x_2)`$ for distinct $`x_1`$ and $`x_2`$.
 
 Since Simon's problem relies on finding pairs of inputs that map to the same output (and whose XOR equals the secret string $`s`$), a **2-to-1 function** is essential for solving the problem. The algorithm exploits this 2-to-1 nature to deduce the secret string efficiently.
+
+# Example of Simon's Problem with a 3-Bit Secret String
+
+Let's assume the secret string $`s = 110`$ (a 3-bit string), and define the function $`f`$ such that:
+
+- $`f(000) = 011`$
+- $`f(001) = 011`$
+- $`f(010) = 100`$
+- $`f(011) = 100`$
+- $`f(100) = 111`$
+- $`f(101) = 111`$
+- $`f(110) = 000`$
+- $`f(111) = 000`$
+
+---
