@@ -1,0 +1,2 @@
+#QAI(Software Modeling based on binary quantum computing) 
+With the appearance of first small quantum computers by IBM, Google, Microsoft and developing quantum artificial intelligence (QAI) emerged. The quantum computers execute some quantum circuits with a certain error, their capacity varies from 5 qubit to 127 qubit, but the race is set up. One of the most popular software development kits (SDK) for working with quantum computers is Qiskit
